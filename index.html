@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Property Pro Lite</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/gallery_style.css" />
+</head>
+<body>
+<div id="container">
+<header>
+
+      <div class="topnav" id="myTopnav">
+  <a href="#" class="active" style="color: white">PropertyPro Lite</a>
+  <a href="index.html">Home</a>
+  <a href="#">Sell</a>
+  <a href="#">Rent</a>
+  <div class="dropdown">
+    <button style="color:black"class="dropbtn">Account 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="html/update.html">Manage Ads</a>  
+      <a href="html/login.html">Log Out</a>
+      <a href="#">Change Password</a>
+    </div>
+  </div> 
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+</header>
+
+<div id="gallery_panel">
+<div id="gallery">
+  <div id="imagearea">
+    <div id="image">
+      <a href="javascript:slideShow.nav(-1)" class="imgnav " id="previmg"></a>
+      <a href="javascript:slideShow.nav(1)" class="imgnav " id="nextimg"></a>
+    </div>
+  </div>
+  <div id="thumbwrapper">
+    <div id="thumbarea">
+      <ul id="thumbs">
+        <li value="1"><img src="images/thumbs/1.jpg" width="179" height="100" alt="" /></li>
+        <li value="2"><img src="images/thumbs/2.jpg" width="179" height="100" alt="" /></li>
+        <li value="3"><img src="images/thumbs/3.jpg" width="179" height="100" alt="" /></li>
+        <li value="4"><img src="images/thumbs/4.jpg" width="179" height="100" alt="" /></li>
+        <li value="5"><img src="images/thumbs/5.jpg" width="179" height="100" alt="" /></li>
+        <li value="3"><img src="images/thumbs/3.jpg" width="179" height="100" alt="" /></li>
+        <li value="4"><img src="images/thumbs/4.jpg" width="179" height="100" alt="" /></li>
+        <li value="5"><img src="images/thumbs/5.jpg" width="179" height="100" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var imgid = 'image';
+var imgdir = 'images/fullsize';
+var imgext = '.jpg';
+var thumbid = 'thumbs';
+var auto = true;
+var autodelay = 3;
+</script>
+<script type="text/javascript" src="js/slide.js"></script>
+
+</div>
+
+<div id="content_panel_1">
+
+	<div id="news_section">
+    	<h1>Site's News</h1>
+        <div class="news_box">
+        	<h3>Property Pro Lite</h3>
+            <p>This <a href="index.html">site</a> has provided a variety of services in terms of selling a property, renting as well as buying one. 
+
+            <p>For more information about our organisation , please click the link below</p>
+
+            <h3><a href="#">Read More</a><h3>     
+
+
+            </div>
+    </div><!-- end of news section -->
+    
+    <div id="section_1_1">
+    	<h1>Find a property</h1>
+        <form method="get" action="#">
+        	<div class="left_column">
+                <div class="form_row"> <label>City: </label><input type="text" name="country" value="" /> </div>
+                <div class="form_row"> <label>Sate / Province: </label>
+                	<select name="state"><option>Select one...<option>Kigali</option><option>Northern Province</option><option>Southern Province</option><option>Eastern Province</option><option>Western Province</option></select>
+                </div>
+                <div class="form_row"> <label>Zip / Postal code </label><input type="text" name="country" value="" /> </div>
+            </div>
+            <div class="right_column">
+	                <div class="form_row">
+                    	<label>Price: </label>
+                        <select name="min_price">
+                            <option>minimum</option>
+                            <option>$50,000</option>
+                            <option>$100,000</option>
+                            <option>$150,000</option>
+                           	<option>$200,000</option>
+                            <option>$250,000</option>
+                        </select>
+                		<label>To: </label>
+                        <select name="max-price">
+                            <option>maximum</option>
+                            <option>$100,000</option>
+                            <option>$200,000</option>
+                            <option>$400,000</option>
+                           	<option>$600,000</option>
+                            <option>$800,000</option>
+                        </select>
+                   </div>
+               	<div class="form_row"> <label>Bedroom: </label>
+                	<select name="bedroom">
+                    	<option>minimum</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form_row"> <label>Bathroom: </label>
+                	<select name="bathroom">
+                    	<option>minimum</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form_row"> 
+                	<input type="submit" value="Submit" name="submit" class="submit_btn_02" />
+                </div>
+            </div>
+            
+        </form>
+    </div><!-- end of section 1 -->
+    <div class="cleaner_with_height">&nbsp;</div>
+</div>
+
+<div id="content_panel_2">
+
+    <h1>ALL PROPERTIES</h1>
+	<div class="section_2">
+    
+    	
+        <img src="images/image_01.jpg" alt="image" />
+        <h4>Apartment 1</h4>
+        <p>Bedrooms: 3<br>Bathrooms: 2<br>Type: Residential<br></p>
+        <div class="price">PRICE:<span> $1,234,000</span></div>    
+        <div class="readmore"><a href="index.html">RENT</a></div>
+        <div class="readmore"><a href="index.html">SELL</a></div>
+        <div class="readmore"><a href="html/update.html">UPDATE</a></div>                       
+    </div>
+    <div class="section_2">
+        <img src="images/image_02.jpg" alt="image" />
+        <h4>Apartment 2</h4>
+        <p>Bedrooms: 3<br>Bathrooms: 2<br>Type: Residential<br></p>
+        <div class="price">PRICE:<span> $876,000</span></div>                           
+        <div class="readmore"><a href="index.html">RENT</a></div>
+        <div class="readmore"><a href="index.html">SELL</a></div>
+        <div class="readmore"><a href="html/update.html">UPDATE</a></div>
+        
+    </div>
+    <div class="section_2">
+
+        <img src="images/image_03.jpg" alt="image" />
+        <h4>Apartment 3</h4>
+       <p>Bedrooms: 3<br>Bathrooms: 2<br>Type: Residential<br></p>
+        <div class="price">PRICE:<span> $2,468,000</span></div>                           
+      <div class="readmore"><a href="index.html">RENT</a></div>
+      <div class="readmore"><a href="index.html">SELL</a></div>
+      <div class="readmore"><a href="html/update.html">UPDATE</a></div>
+      
+    </div>
+    
+    <div class="cleaner_with_height">&nbsp;</div>
+</div> <!-- end of content panel 2 -->
+
+<div id="content_panel_3">
+
+	<div class="quick_contact">
+    	<h1>Quick Contact</h1>
+        <p>
+            Tel: +25(0780788832)<br />
+            Email: nkundimanaluqman@gmail.com
+        </p>
+        </div><!-- end of news section 3-->
+    
+   <div class="section_3">
+    	<h1>Our Agents</h1>
+        	<ul class="list_section">
+                <li><a href="#">Nkundimana Luqman</a></li>
+                <li><a href="#">Rusimbi Patrick</a></li>
+                <li><a href="#">Zachee</a></li>
+            </ul>
+    </div>
+    <div class="section_3">
+    </div>
+    
+<div class="cleaner_with_height">&nbsp;</div>
+</div><!-- end of content panel 3 -->
+
+<div id="footer_panel">
+    <p>Copyright © 2019 <a href="index.html">PropertyPro Lite</a> |  by NKUNDIMANA LUQMAN
+    </p>
+</div>
+</div> <!-- end of container -->
+
+<script src="js/nav.js"></script>
+</body>
+</html>
