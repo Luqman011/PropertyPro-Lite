@@ -28,7 +28,7 @@ a:link, a:visited { color: #ff8400; text-decoration: none; font-size: 12px;}
   font-size: 17px;
 }
 
-.active {
+#active {
   background-color:#223e5d ;
   color: #fff;
   border: 1px solid #000;
@@ -197,6 +197,9 @@ span{
 }
 label{
   color: #fff;
+}
+a{
+  color:#c1e0f7; 
 }
 
 
