@@ -32,10 +32,11 @@ a:link, a:visited { color: #ff8400; text-decoration: none; font-size: 12px;}
   font-size: 17px;
 }
 
-.active {
+#active {
   background-color:#223e5d ;
   color: #fff;
   border: 1px solid #000;
+  text-decoration: none;
 }
 
 .topnav .icon {
@@ -350,7 +351,7 @@ p {
 }
 
 #section_1_1 .right_column {
-	float: right;
+	float: left;
 	width: 278px;
 }
 
@@ -481,7 +482,7 @@ color: #000;
 @media screen and (min-width: 600px){
  .right_column .form_row label{
 		width: 100%;
-		display: flex;
+
 
 	}
 	.right_column .form_row label select{
