@@ -77,3 +77,11 @@ label{
 p{
 	font-size: 20px;
 }
+#link{
+	color: #fff;
+	font-size: 40px;
+}
+#link:hover{
+	text-decoration: none;
+	color: #fff;
+}
