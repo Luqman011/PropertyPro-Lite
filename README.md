@@ -2,7 +2,7 @@
 
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
-link: luqman011.github.io/PropertyPro-Lite/UI/
+[Property-pro Lite home page](https://luqman011.github.io/PropertyPro-Lite/UI/)
 
 
 i. User can sign up.
