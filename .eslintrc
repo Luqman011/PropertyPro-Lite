@@ -1,4 +1,4 @@
-{
+ {
     "extends": "airbnb",
     "parserOptions": {
         "ecmaVersion": 6
@@ -20,5 +20,6 @@
         "import/no-extraneous-dependencies": "off",
         "import/no-unresolved": "off",
         "no-undef": "off",
+        "indent": "off",
     }
 }

@@ -1,35 +1,22 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
 
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+import userRoute from './routes/user';
+
+require('dotenv');
 
 const app = express();
-// configure app for body parser /
+const PORT = process.env.PORT || 5000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/api/v1/auth', userRoute);
 
-// set up port for server to listen on//
+if (process.env.NODE_ENV !== 'test') {
+  // eslint-disable-next-line no-console
+  app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
+}
 
-const PORT = process.env.PORT || 3000;
-
-// set up routes//
-
-const router = express.Router();
-
-// all routes will be prefixed with /api //
-
-app.use('/api', router);
-
-// test route /
-router.get('/', function (req, res) {
-  res.json({ message: 'Welcome to my API!' });
-});
-
-// fire up server//
-
-app.listen(PORT, () => {
-  console.log(`Server listening on port: ${PORT}`);
-});
-// print a message to console .
-
-console.log('Server listening on port' + PORT);
+export default app;
